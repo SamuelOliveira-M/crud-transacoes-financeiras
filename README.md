@@ -27,7 +27,7 @@ Certifique-se de que você possui as seguintes ferramentas instaladas em sua má
 ### Clonar o Repositório
 1. Abra o terminal e navegue até a pasta onde deseja clonar o projeto.
 2. Execute o seguinte comando para clonar o repositório:
-   ``` git clone https://github.com/SamuelOliveira-M/crud-transacoes-financeiras.git ```
+   * ``` git clone https://github.com/SamuelOliveira-M/crud-transacoes-financeiras.git ```
 3. Após clonar o repositório, entre na pasta do projeto:
    ``` cd crud-transacoes-financeiras ```
 
