@@ -1,4 +1,4 @@
-CREATE DATABASE financias;
+CREATE DATABASE laravel;
 USE financias;
 
 CREATE TABLE Categorias (
