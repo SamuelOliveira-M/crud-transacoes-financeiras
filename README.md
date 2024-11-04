@@ -8,10 +8,11 @@
 
 Mencione as ferramentas que você usou para criar seu projeto
 
-* TypeScript
-* Express
-* Postgress
-* Prisma
+* Laravel
+* PHP
+* MySQL
+* Angular
+* git
 
 ## 📋 Pré-requisitos
 
