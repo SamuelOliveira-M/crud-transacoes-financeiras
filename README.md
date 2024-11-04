@@ -29,14 +29,14 @@ Certifique-se de que você possui as seguintes ferramentas instaladas em sua má
 2. Execute o seguinte comando para clonar o repositório:
    * ``` git clone https://github.com/SamuelOliveira-M/crud-transacoes-financeiras.git ```
 3. Após clonar o repositório, entre na pasta do projeto:
-   ``` cd crud-transacoes-financeiras ```
+   * ``` cd crud-transacoes-financeiras ```
 
 ### Criar Banco de dados  
 4. Acesse o MySQL via terminal e execute o comando: 
-  ``` mysql -u root -p ```
+ *  ``` mysql -u root -p ```
 5. Execute o Script SQL
    * Uma vez conectado ao MySQL, execute o script localizado no arquivo data-base.sql da seguinte maneira:
-   * ``` SOURCE /caminho/para/seu/arquivo/data-base.sql; ```
+   * * ``` SOURCE /caminho/para/seu/arquivo/data-base.sql; ```
    * OBS: Coloque o caminho completo do script !
     
 6. Saída Esperada
@@ -45,11 +45,11 @@ Certifique-se de que você possui as seguintes ferramentas instaladas em sua má
 ### Configuração do Backend (Laravel)
 
 7. Navegue para a pasta backend do projeto:
-``` cd backend ```
+* ``` cd backend ```
 8. Instale as dependências do Laravel usando o Composer:
-   ``` composer install ```
+   * ``` composer install ```
 9. Crie uma cópia do arquivo de ambiente .env.example para .env, que armazenará as configurações específicas do projeto:
-   ``` cp .env.example .env ```
+  *  ``` cp .env.example .env ```
 10. Abra o arquivo .env em um editor de texto e atualize as informações de banco de dados com as credenciais configuradas anteriormente:
 ```
 DB_CONNECTION=mysql
@@ -61,21 +61,21 @@ DB_PASSWORD=
 
 ```
 11. Gere uma chave de aplicação para o Laravel:
- ``` php artisan key:generate ```
+ * ``` php artisan key:generate ```
 12. Execute as migrações para criar as tabelas no banco de dados MySQL:
-  ``` php artisan migrate ```
+  * ``` php artisan migrate ```
 13. Inicie o servidor do Laravel para disponibilizar a API do backend:
-  ``` php artisan serve ```
+  * ``` php artisan serve ```
 
   * O backend estará disponível em http://127.0.0.1:8000.
 
 ### Configuração do Frontend (Angular)
 14. Abra um novo terminal e, na pasta raiz do projeto (crud-transacoes-financeiras), navegue até a pasta do frontend:
-  ``` cd frontend ```
+  * ``` cd frontend ```
 15. Instale as dependências do Angular:
-  ``` npm install ```
+  * ``` npm install ```
 16. Inicie o servidor de desenvolvimento do Angular:
-  ``` ng serve ```
+  * ``` ng serve ```
   * O frontend estará disponível em http://localhost:4200.
 
 
