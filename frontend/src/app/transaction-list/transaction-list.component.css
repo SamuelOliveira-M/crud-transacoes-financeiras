@@ -1,0 +1,145 @@
+body{
+  margin: 0px;
+}
+
+.conteiner-button{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.button-form{
+  background-color:#564FA9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.button-form a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap:10px ;
+}
+
+.button-form a span{
+  font-size: 20px;
+  text-align: end;
+}
+
+.transaction-select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #564FA9;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  max-width: 120px;
+  margin: 10px;
+}
+
+.transaction-select:hover {
+  border-color: #766CDD;
+}
+
+.transaction-select option {
+  color: #564FA9;
+}
+
+
+
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+th {
+  background-color: #564FA9;
+  color: white;
+  font-size: 20px;
+}
+
+.conteiner-button-table{
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.edit:hover {
+  background-color: #c0bbf3;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: #c0bbf3;
+  cursor: pointer;
+}
+
+.edit{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.delete{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.edit img{
+  width: 25px;
+  height: 25px;
+}
+
+.delete img{
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width: 650px) {
+    
+  table {
+    width: 100%;
+  }
+  .transaction-filter-container {
+    width: 100%;
+  }
+
+  th, td {
+    font-size: 16px;
+  }
+  
+  th {
+    font-size: 14px;
+  }
+
+  .edit img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .delete img{
+    width: 20px;
+    height: 20px;
+  }
+}

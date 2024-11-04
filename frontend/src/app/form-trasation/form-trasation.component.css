@@ -1,0 +1,84 @@
+
+.conteiner{
+    width: 100%;
+    display: flex;
+    justify-content:center ;
+    margin-top: 10px;
+}
+
+.card {
+    border: 1px solid #564FA9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px  #564FA9;
+    width: 500px; /* Largura do card */
+    padding-bottom:20px ;
+}
+
+form{
+    padding: 5px 50px 5px 50px ;
+}
+
+.card h2 {
+    color:#564FA2 ;
+    margin: 0;
+    padding: 25px;
+}
+
+.card label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.card select,
+
+.card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #564FA9; /* Cor das bordas */
+    border-radius: 5px;
+    box-sizing: border-box; /* Para incluir padding e borda na largura total */
+}
+
+button {
+    background-color:#564FA9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.button-form a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:10px ;
+  }
+  
+  .button-form a span{
+    font-size: 20px;
+    text-align: end;
+  }
+  
+
+.card button:disabled {
+    background-color: #564FA2; /* Cor do botão desativado */
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 650px) {
+    .card{
+        width: 100%;
+    }
+
+    form{
+        padding: 15px 50px 15px 50px ;
+    }
+    
+}

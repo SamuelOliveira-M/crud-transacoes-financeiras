@@ -1,0 +1,25 @@
+<button class="button-form">
+    <a href="/"><span>-</span>Voltar à Página Anterior</a>
+</button>
+<div class="conteiner">
+    <div class="card">
+        <h2>Cadastrar Transações:</h2>
+        <form [formGroup]="userForm" (ngSubmit)="submitForm()">
+            <select id="tipo" formControlName="tipo">
+                <option value="">Selecione um tipo</option>
+                <option value="receita">Receita</option>
+                <option value="despesa">Despesa</option>
+            </select>
+            <div>
+                <label for="valor">Valor</label>
+                <input id="valor" formControlName="valor" type="number" />
+            </div>
+            <div>
+                <label for="categoria_nome">Categoria</label>
+                <input id="categoria_nome" formControlName="categoria_nome" type="text" />
+            </div>
+            <button type="submit" [disabled]="userForm.invalid">Salvar</button>
+        </form>          
+    </div>
+</div>
+  

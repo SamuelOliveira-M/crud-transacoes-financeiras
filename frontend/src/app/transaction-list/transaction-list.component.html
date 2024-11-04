@@ -1,0 +1,43 @@
+<!-- src/app/transaction-list/transaction-list.component.html -->
+<div class="conteiner-button">
+  <button class="button-form">
+    <a href="/transaction-form">Adicionar Nova Transação <span>+</span></a>
+  </button>
+  <select id="tipo" [(ngModel)]="selectedType" class="transaction-select">
+    <option value="">Todos</option>
+    <option value="receita">Receita</option>
+    <option value="despesa">Despesa</option>
+  </select>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Categoria</th>
+      <th>Valor</th>
+      <th>Tipo</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of transactions | filterByType:selectedType">
+      <td>{{ transaction.id }}</td>
+      <td>{{ transaction.categoria.nome }}</td>
+      <td>{{ transaction.valor }}</td>
+      <td>{{ transaction.tipo }}</td>
+      <td>
+        <div class="conteiner-button-table">
+          <button class="edit" (click)="editTransaction(transaction.id)">
+            <img src="../../../edit-icon.svg" alt="">
+          </button>
+          
+          <button class="delete" (click)="deleteTransaction(transaction.id)">
+            <img src="../../../delete-icon.svg" alt="">
+          </button>
+        </div>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
