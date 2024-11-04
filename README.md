@@ -37,7 +37,7 @@ Certifique-se de que você possui as seguintes ferramentas instaladas em sua má
  *  ``` mysql -u root -p ```
 5. Execute o Script SQL
    * Uma vez conectado ao MySQL, execute o script localizado no arquivo data-base.sql da seguinte maneira:
-   * * ``` SOURCE /caminho/para/seu/arquivo/data-base.sql; ```
+   * * ``` SOURCE /caminho/para/seu/arquivo/table.sql; ```
    * OBS: Coloque o caminho completo do script !
     
 6. Saída Esperada
