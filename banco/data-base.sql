@@ -1,5 +1,5 @@
 CREATE DATABASE laravel;
-USE financias;
+USE laravel;
 
 CREATE TABLE Categorias (
     id INT AUTO_INCREMENT PRIMARY KEY,
